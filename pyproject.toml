@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cards"
+version = "0.1.0"
+description = ""
+authors = ["Gilad Kutiel <gilad.kutiel@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fpdf2 = "^2.8.1"
+fire = "^0.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
