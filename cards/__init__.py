@@ -14,6 +14,8 @@ def render(
     with open(words_txt, 'r') as f:
         words = f.readlines()
 
+    print(f'Loaded {len(words)} words from {words_txt}')
+
     pdf = FPDF()
     pdf.set_margin(0)
     pdf.set_font('helvetica', 'B', 16)
@@ -36,6 +38,8 @@ def render(
             border=1)
 
     pdf.output(words_pdf)
+
+    print(f'Generated {words_pdf}')
 
 
 if __name__ == '__main__':
